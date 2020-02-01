@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Algoritmo II</title>
+</head>
+<body>
+  <script>
+    //...........Predice el output 
+
+    function looping(x,y) {  //(3,3)
+        for(var i=0; i<x; i++) {  // i<3
+            for(var j=0; j<x; j++) {   //j<3      
+                console.log(i*j);
+            } 
+        }
+    }
+    z = looping(3,3);
+    console.log(z);
+
+     //...........Output = 0, 0, 0, 0, 1, 2, 0, 2, 4, 
+     //undefined(porque la funcion no retorna nada, no se puede imprimir "z");
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Algoritmo IV</title>
+</head>
+<body>
+  <script>
+    //...........Configura un array para que los valores 
+    //...........negativos se transformen en 0. Por ejemplo, 
+    //...........resetNegativos([1,2,-1,-3]) debiera dar como
+    //........... resultado [1,2,0,0];
+
+
+    function notNegative(){
+        for(var i=0; i<arreglo.length; i++){
+            if(arreglo[i]<0){
+                arreglo[i] = 0;
+            }
+        }
+        console.log(arreglo);
+    }
+    var arreglo = [2,6,-1,-3];
+    notNegative(arreglo); //...Debería imprimir [1,6,0,0];
+    
+    
+  </script>
+</body>
+</html>

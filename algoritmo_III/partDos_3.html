@@ -9,14 +9,16 @@
   <script>
     //...........Part Dos,  Cuadra cada valor con un array dado, obteniendo el mismo array con valores cambiados;
 
-    function squareValue(x){
-         // your code here
+    function change(x){
+        for(var i=0; i<x.length; i++){
+          x[i] = x[i] * x[i];
+        }
         return x;
     }
-    y = squareValue([1,2,3]);
+    y = change([1,2,3]);
     console.log(y); // should log [1,4,9]
     
-    y = squareValue([2,5,8]);
+    y = change([2,5,8]);
     console.log(y); // should log [4,25,64]
 
   </script>

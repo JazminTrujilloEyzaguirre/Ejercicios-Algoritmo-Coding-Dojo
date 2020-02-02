@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Algoritmo IV</title>
+</head>
+<body>
+  <script>
+    //...........Dado un array de números, crea una función 
+    //...........que dé como resultado un nuevo array donde 
+    //...........los valores negativos se reemplacen por el
+    //...........texto (string) ‘Dojo’. Por ejemplo, reemplazarNegativos
+    //...........([1,2,-3,-5,5]) debiera devolver [1,2, “Dojo”, “Dojo”, 5];
+
+    function notNegative(){
+        for(var i=0; i<arreglo.length; i++){
+            if(arreglo[i]<0){
+                arreglo[i] = "Dojo";
+            }
+        }
+        console.log(arreglo);
+    }
+    var arreglo = [1,2,-3,-5, 5];
+    notNegative(arreglo); //...Debería imprimir [1, 2, Dojo, Dojo, 5];
+
+    
+
+  </script>
+</body>
+</html>
+
+
